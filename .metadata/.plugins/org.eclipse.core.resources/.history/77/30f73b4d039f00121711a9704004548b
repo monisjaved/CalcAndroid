@@ -1,0 +1,115 @@
+package gov.awaaz;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.text.InputType;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.EditText;
+import android.view.Menu;
+
+public class Main extends Activity 
+{
+	Button buttons1, buttons2;
+	Intent i;
+	
+	public void onCreate(Bundle savedInstanceState)
+	{
+	    super.onCreate(savedInstanceState);
+	    setContentView(R.layout.main);
+	    buttons1 = (Button)findViewById(R.id.button1);
+	    buttons2 = (Button)findViewById(R.id.button2);
+	    buttons1.setOnClickListener(new Main.AgrobuttonHandler());
+        buttons2.setOnClickListener(new EdubuttonHandler());
+	}
+	
+	
+	/*public void onClick(View v) 
+	{
+		switch(v.getId()) 
+		{
+			case R.id.button1:
+		   
+			//Listener for the agriculture
+			Intent intent1 = new Intent();
+			intent1.setClass(this,agriculture.class);
+			startActivity(intent1);
+			break;
+		   
+           case R.id.button2:
+		   
+            //Listener for the education
+        	Intent intent2 = new Intent();
+   			intent2.setClass(Main.this,education.class);
+   			startActivity(intent2);
+   			break;
+			
+		   default:
+		   
+		    break;
+		}
+	}*/
+
+	
+				
+		
+		/*button1.setOnClickListener
+		(new Button.OnClickListener()
+			{
+			public void onClick(View v)
+				{
+					Intent intent1 = new Intent(Main.this, agriculture.class);
+					startActivity(intent1);
+
+				}
+			}
+				);
+
+	      
+	        button2.setOnClickListener
+	        (new Button.OnClickListener()
+	            {
+	            public void onClick(View v)
+	                {
+	            	Intent intent2 = new Intent(Main.this,education.class);
+                    startActivity(intent2);
+
+	                }
+	            }
+	        );*/
+	        
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) 
+	{
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.main, menu);
+        return true;
+    }
+    
+
+
+	private abstract class AgrobuttonHandler implements OnClickListener
+	{
+	
+		public void onClick(View v) 
+		{
+	     
+			 i = new Intent(Main.this,agriculture.class);
+			 startActivity(i);     
+		}
+	}
+	
+	private abstract class EdubuttonHandler implements OnClickListener
+	{
+	
+		public void onClick(View v) 
+		{
+	     
+			 i = new Intent(Main.this,education.class);
+			 startActivity(i);     
+		}
+	}
+  
+}

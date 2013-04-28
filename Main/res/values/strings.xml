@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="menu_settings">Hello World</string>
+    <string name="hello">Hello World, MyActivity!</string>
+    <string name="button1">Agriculture and Rural Devolpment</string>
+    <string name="button2">Education and Skill Development</string>
+    <string name="button3">Energy</string>
+    <string name="app_name">Awaaz</string>
+	<string name="button4">Health</string>
+	<string name="button5">Macroeconomic Framework</string>
+	<string name="button6">Urban Development</string>
+	<string name="button7">Water and Environment</string>
+</resources>

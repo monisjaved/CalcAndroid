@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<EditText android:layout_height="wrap_content" 
+    android:id="@+id/First_Operand" 
+    android:layout_width="fill_parent" 
+    android:inputType="number"
+    android:hint="@string/field1_string">
+</EditText>
+<EditText android:layout_height="wrap_content" 
+    android:layout_width="fill_parent" 
+    android:inputType="number" 
+    android:id="@+id/second_Operand"
+    android:hint="@string/field2_string">
+</EditText>
+<LinearLayout 
+   android:orientation="horizontal" 
+   android:gravity="center"
+   android:layout_height="wrap_content"
+   android:layout_width="fill_parent"
+   >
+   
+<Button android:layout_height="wrap_content" 
+    android:id="@+id/Plus" 
+    android:text="@string/plus_string" 
+    android:layout_width="70dp">
+</Button>
+<Button android:layout_height="wrap_content" 
+    android:id="@+id/Subtract" 
+    android:text="@string/subtract_string" 
+    android:layout_width="70dp">
+</Button>
+<Button android:layout_height="wrap_content" 
+    android:id="@+id/multiply" 
+    android:text="@string/multiply_string" 
+    android:layout_width="70dp">
+</Button>
+<Button android:layout_height="wrap_content" 
+    android:id="@+id/divide" 
+    android:text="@string/divide_String" 
+    android:layout_width="70dp">
+</Button>
+
+</LinearLayout>
+<Button 
+    android:layout_height="wrap_content" 
+    android:layout_width="fill_parent" 
+    android:text="@string/answerButton" 
+    android:id="@+id/New_calculation">
+</Button>
+
+<EditText
+    android:layout_height="wrap_content" 
+    android:id="@+id/finalAnswer" 
+    android:layout_width="fill_parent" 
+    android:inputType="number">
+</EditText>
+
+</LinearLayout>

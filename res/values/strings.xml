@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="menu_settings">Hello World</string>
+    <string name="hello">Hello World, MyActivity!</string>
+    <string name="plus_string">Add</string>
+    <string name="app_name">Calculator</string>
+	<string name="multiply_string">Multiply</string>
+	<string name="divide_String">Divide</string>
+	<string name="subtract_string">Subtract</string>
+	<string name="RadioGroup01">RadioGroup</string>
+	<string name="answerButton">New Calculation !</string>
+	<string name="RadioGroup">Radio Groups</string>
+	<string name="field1_string">Enter first number</string>
+	<string name="field2_string">Enter second number</string>
+</resources>
